@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/*============
+	Global CSS
+=============*/
+/*============
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*============
+	Header CSS
+=============*/
+header{
+	padding: 15px 0;
+	background: #f6f9f9;
+}
+/*============
+	hero CSS
+=============*/
+.hero{
+	padding: 50px 0;
+	background: url(../img/hero.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.hero h1{
+	text-transform: uppercase;
+    font-size: 120px;
+    padding: 20px 0;
+    font-weight: 700;
+}
+.hero p{
+	padding: 45px 0;
+    font-size: 20px;
+}
+.hero p span{
+	text-transform: uppercase;
+}
+.divider{
+	background: #12a3e0;
+	width: 50%;
+	height: 5px;
+	margin: 0 auto;
+}
+.btn-call{
+	color: #fff;
+    border: 1px solid #12a3e0;
+    padding: 10px 35px;
+    font-size: 20px;
+}
+.btn:hover {
+    color: #212529;
+    border:3px solid #fff;
+    transition: 1s ease-in-out;
+    background: #fff;
+    font-size: 25px;
+}
+.hero a .fa{
+	color: #fff;
+	font-size: 20px;
+	padding-top: 180px;
+}
+/*============
+	Design CSS
+=============*/
+.design{
+	background: #f6f9f9;
+	padding: 100px 0;
+}
+.design h1{
+	padding: 16px 0;
+    font-size: 35px;
+}
+.design p{
+	font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 66%;
+    margin: 0 auto;
+    color: #bebfbf;
+}
+/*============
+	Icon CSS
+=============*/
+.icon{
+	padding: 0px 0 50px;
+}
+.info{
+	margin-top: 120px;
+}
+.info h2{
+	padding: 15px 0;
+    font-size: 20px;
+}
+.info p{
+	font-size: 15px;
+    font-weight: 300;
+    color: #bebfbf;
+}
+.image{
+	background: linear-gradient(90deg, #1680bf, #5fc3ff);
+    width: 30%;
+    height: 80px;
+    margin: 0 auto;
+}
+.img-item{
+	margin-top: 10px;
+}
+.image a .fa{
+	color: #fff;
+    font-size: 50px;
+    line-height: 80px;
+}
+/*============
+	portfolio CSS
+=============*/
+.portfolio{
+	padding: 75px 0;
+	background: #f6f9f9;
+}
+.section-title{
+	padding-bottom: 75px;
+}
+.section-title h2{
+	text-align: center;
+}
+.section-title p{
+	text-align: center;
+}
+.item{
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+	height: 296.5px;
+	margin-bottom: 30px;
+}
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 296.5px;
+	top: 0;
+	left: 0;
+	background: rgba(44,172,247, .9);
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.item:hover .item-hover{
+	opacity: 1;
+}
+.item img{
+	transition: 0.5s ease-in-out;
+	
+}
+.item:hover img{
+	transform: scale(1.2);
+}
+.item-hover ul{
+	padding: 0;
+	text-align: center;
+}
+.item-hover ul li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    margin: 0 5px;
+    font-size: 24px;
+    line-height: 45px;
+    margin-top: 28%;
+}
+.item-hover ul li a .fa{
+	color: #fff;
+
+}
+/*============
+	Form CSS
+=============*/
+.stay{
+	background: url(../img/stay.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+	padding: 50px 0;
+}
+.stay:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(43, 54, 74, .5);
+	z-index: -1;
+}
+.stay h1{
+	padding: 20px 0;
+	text-align: center;
+}
+.stay p{
+	text-align: center;
+	color: #bebfbf;
+}
+.label{
+	text-align: left;
+}
+.form-group{
+	padding: 20px 35px;
+	color: #fff;
+}
+.form-control{
+	padding: 15px 20px;
+    border-radius: 0;
+    background: rgba(0, 0, 0, .7);
+    border: 1px solid #0096ff;
+    margin: 25px 0;
+}
+.form-control-textarea{
+	padding: 15px 20px;
+	width: 100%;
+    background: rgba(0, 0, 0, .7);
+    border: 1px solid #0096ff;
+}
+.btn-submit{
+	color: #fff;
+    background: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    display: block;
+    margin: 24px auto;
+    border-radius: 25px;
+    padding: 8px 42px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+.btn-submit:hover{
+	background: #fff;
+	color: #000;
+	transition: 2s ease-in-out;
+	font-weight: 600;
+	font-size: 30px;
+}
+/*============
+	Footer CSS
+=============*/
+footer{
+
+}
+.social-item{
+	padding-top: 20px;
+}
+.social-item ul{
+	padding: 0;
+	text-align: center;
+}
+.social-item ul li{
+	list-style: none;
+	display: inline;
+	color: #fff;
+	display: inline;
+	padding: 0 3px;
+}
+.social-item ul li a .fa{
+	color: #fff;
+	background: #15a4fa;
+	text-align: center;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 25px;
+	transition: 0.4s ease-in-out;
+}
+.social-item ul li a .fa:hover{
+	background: aqua;
+	color: #000;
+	transition: 1s ease-in-out;
+}
+
+/*Media Query For Mobile*/
+
+@media ( min-width: 320px ) and ( max-width: 576px ){
+	.hero h1 { font-size: 70px; }
+	.divider { width: 20%; }
+	.btn-call { font-size: 15px; padding: 10px 20px; }
+	.hero a .fa { padding: 40px 0 0; }
+	.design { padding: 30px 0; }
+	.design p { width: 100%; font-size: 13px; }
+	.portfolio { padding: 30px 0; }
+	.section-title { padding-bottom: 30px; }
+	.item { margin-bottom: 0; }
+	.info { margin: 30px 0; }
+	.stay { padding: 20px 0; }
+	.form-group { padding: 10px 20px; }
+	.form-control { padding: 8px 15px; margin: 15px 0; }
+	.btn-submit { padding: 4px 20px; font-size: 15px; }
+}
